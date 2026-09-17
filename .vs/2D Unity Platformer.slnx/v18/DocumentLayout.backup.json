@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\GitHub\\2D Unity Platformer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\github\\2d unity platformer\\assets\\myassets\\scripts\\playercombat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\myassets\\scripts\\playercombat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\github\\2d unity platformer\\assets\\myassets\\scripts\\enemycombat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\myassets\\scripts\\enemycombat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\github\\2d unity platformer\\assets\\myassets\\scripts\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\myassets\\scripts\\playerhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\github\\2d unity platformer\\assets\\myassets\\scripts\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\myassets\\scripts\\enemymovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\github\\2d unity platformer\\assets\\myassets\\scripts\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\myassets\\scripts\\enemyhealth.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|d:\\github\\2d unity platformer\\assets\\myassets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B4CD19DA-EE08-5225-FB19-1D0DFA4113DD}|Assembly-CSharp.csproj|solutionrelative:assets\\myassets\\scripts\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerHealth.cs",
+              "DocumentMoniker": "D:\\GitHub\\2D Unity Platformer\\Assets\\MyAssets\\Scripts\\PlayerHealth.cs",
+              "RelativeDocumentMoniker": "Assets\\MyAssets\\Scripts\\PlayerHealth.cs",
+              "ToolTip": "D:\\GitHub\\2D Unity Platformer\\Assets\\MyAssets\\Scripts\\PlayerHealth.cs",
+              "RelativeToolTip": "Assets\\MyAssets\\Scripts\\PlayerHealth.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T20:30:59.192Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EnemyHealth.cs",
+              "DocumentMoniker": "D:\\GitHub\\2D Unity Platformer\\Assets\\MyAssets\\Scripts\\EnemyHealth.cs",
+              "RelativeDocumentMoniker": "Assets\\MyAssets\\Scripts\\EnemyHealth.cs",
+              "ToolTip": "D:\\GitHub\\2D Unity Platformer\\Assets\\MyAssets\\Scripts\\EnemyHealth.cs",
+              "RelativeToolTip": "Assets\\MyAssets\\Scripts\\EnemyHealth.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB4AAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T17:12:06.937Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EnemyCombat.cs",
+              "DocumentMoniker": "D:\\GitHub\\2D Unity Platformer\\Assets\\MyAssets\\Scripts\\EnemyCombat.cs",
+              "RelativeDocumentMoniker": "Assets\\MyAssets\\Scripts\\EnemyCombat.cs",
+              "ToolTip": "D:\\GitHub\\2D Unity Platformer\\Assets\\MyAssets\\Scripts\\EnemyCombat.cs",
+              "RelativeToolTip": "Assets\\MyAssets\\Scripts\\EnemyCombat.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAowBQAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-14T20:22:54.628Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerCombat.cs",
+              "DocumentMoniker": "D:\\GitHub\\2D Unity Platformer\\Assets\\MyAssets\\Scripts\\PlayerCombat.cs",
+              "RelativeDocumentMoniker": "Assets\\MyAssets\\Scripts\\PlayerCombat.cs",
+              "ToolTip": "D:\\GitHub\\2D Unity Platformer\\Assets\\MyAssets\\Scripts\\PlayerCombat.cs",
+              "RelativeToolTip": "Assets\\MyAssets\\Scripts\\PlayerCombat.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-26T16:10:36.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "D:\\GitHub\\2D Unity Platformer\\Assets\\MyAssets\\Scripts\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\MyAssets\\Scripts\\PlayerMovement.cs",
+              "ToolTip": "D:\\GitHub\\2D Unity Platformer\\Assets\\MyAssets\\Scripts\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\MyAssets\\Scripts\\PlayerMovement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T05:17:28.16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EnemyMovement.cs",
+              "DocumentMoniker": "D:\\GitHub\\2D Unity Platformer\\Assets\\MyAssets\\Scripts\\EnemyMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\MyAssets\\Scripts\\EnemyMovement.cs",
+              "ToolTip": "D:\\GitHub\\2D Unity Platformer\\Assets\\MyAssets\\Scripts\\EnemyMovement.cs",
+              "RelativeToolTip": "Assets\\MyAssets\\Scripts\\EnemyMovement.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwBwAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-08-26T05:17:17.02Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
