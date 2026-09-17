@@ -5,21 +5,6 @@ TextureImporter:
   - first:
       213: -3231490531101808720
     second: status_danger_0
-  - first:
-      213: -1415123401412857803
-    second: status_danger_1
-  - first:
-      213: -7868724087064864736
-    second: status_danger_2
-  - first:
-      213: 9056373174059068936
-    second: status_danger_3
-  - first:
-      213: 4403888286253939794
-    second: status_danger_4
-  - first:
-      213: -6571377458061364054
-    second: status_danger_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -120,8 +105,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 33
-        height: 32
+        width: 270
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,116 +117,6 @@ TextureImporter:
       bones: []
       spriteID: 0b763aeab707723d0800000000000000
       internalID: -3231490531101808720
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: status_danger_1
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 0
-        width: 35
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 530b17993c87c5ce0800000000000000
-      internalID: -1415123401412857803
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: status_danger_2
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 0
-        width: 34
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 02850f2122dacc290800000000000000
-      internalID: -7868724087064864736
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: status_danger_3
-      rect:
-        serializedVersion: 2
-        x: 110
-        y: 0
-        width: 34
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 80eea294b63bead70800000000000000
-      internalID: 9056373174059068936
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: status_danger_4
-      rect:
-        serializedVersion: 2
-        x: 147
-        y: 0
-        width: 34
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 25c7ba44011cd1d30800000000000000
-      internalID: 4403888286253939794
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: status_danger_5
-      rect:
-        serializedVersion: 2
-        x: 184
-        y: 0
-        width: 33
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: aa43e3fb407cdc4a0800000000000000
-      internalID: -6571377458061364054
       vertices: []
       indices: 
       edges: []
@@ -261,11 +136,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       status_danger_0: -3231490531101808720
-      status_danger_1: -1415123401412857803
-      status_danger_2: -7868724087064864736
-      status_danger_3: 9056373174059068936
-      status_danger_4: 4403888286253939794
-      status_danger_5: -6571377458061364054
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

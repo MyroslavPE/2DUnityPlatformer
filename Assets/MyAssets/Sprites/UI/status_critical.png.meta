@@ -17,15 +17,6 @@ TextureImporter:
   - first:
       213: -1222950922017415612
     second: status_critical_4
-  - first:
-      213: 3986705002957497537
-    second: status_critical_5
-  - first:
-      213: -9055740451896708574
-    second: status_critical_6
-  - first:
-      213: -6811318511939297308
-    second: status_critical_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,8 +117,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 33
-        height: 32
+        width: 91
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,10 +137,10 @@ TextureImporter:
       name: status_critical_1
       rect:
         serializedVersion: 2
-        x: 35
+        x: 99
         y: 0
-        width: 33
-        height: 32
+        width: 42
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,10 +159,10 @@ TextureImporter:
       name: status_critical_2
       rect:
         serializedVersion: 2
-        x: 75
+        x: 159
         y: 0
-        width: 28
-        height: 32
+        width: 37
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,10 +181,10 @@ TextureImporter:
       name: status_critical_3
       rect:
         serializedVersion: 2
-        x: 111
+        x: 214
         y: 0
-        width: 28
-        height: 32
+        width: 132
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,10 +203,10 @@ TextureImporter:
       name: status_critical_4
       rect:
         serializedVersion: 2
-        x: 146
+        x: 354
         y: 0
-        width: 29
-        height: 32
+        width: 41
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,72 +217,6 @@ TextureImporter:
       bones: []
       spriteID: 44e5a6bad94370fe0800000000000000
       internalID: -1222950922017415612
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: status_critical_5
-      rect:
-        serializedVersion: 2
-        x: 177
-        y: 0
-        width: 33
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1c4ed85e31f935730800000000000000
-      internalID: 3986705002957497537
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: status_critical_6
-      rect:
-        serializedVersion: 2
-        x: 213
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 222bf82d90c835280800000000000000
-      internalID: -9055740451896708574
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: status_critical_7
-      rect:
-        serializedVersion: 2
-        x: 253
-        y: 0
-        width: 27
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4efd0dbb6e55971a0800000000000000
-      internalID: -6811318511939297308
       vertices: []
       indices: 
       edges: []
@@ -315,9 +240,6 @@ TextureImporter:
       status_critical_2: 6162959188113659007
       status_critical_3: -8966752480116874209
       status_critical_4: -1222950922017415612
-      status_critical_5: 3986705002957497537
-      status_critical_6: -9055740451896708574
-      status_critical_7: -6811318511939297308
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

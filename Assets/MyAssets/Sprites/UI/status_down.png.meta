@@ -5,15 +5,6 @@ TextureImporter:
   - first:
       213: -6530073121163382983
     second: status_down_0
-  - first:
-      213: -5069794741759765544
-    second: status_down_1
-  - first:
-      213: -4006326507377701798
-    second: status_down_2
-  - first:
-      213: 772303173985734358
-    second: status_down_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -114,8 +105,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 34
-        height: 32
+        width: 180
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -126,72 +117,6 @@ TextureImporter:
       bones: []
       spriteID: 93feab718158065a0800000000000000
       internalID: -6530073121163382983
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: status_down_1
-      rect:
-        serializedVersion: 2
-        x: 37
-        y: 0
-        width: 34
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8d314451b8874a9b0800000000000000
-      internalID: -5069794741759765544
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: status_down_2
-      rect:
-        serializedVersion: 2
-        x: 73
-        y: 0
-        width: 35
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a5c4589944ba668c0800000000000000
-      internalID: -4006326507377701798
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: status_down_3
-      rect:
-        serializedVersion: 2
-        x: 111
-        y: 0
-        width: 33
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6de835815a5c7ba00800000000000000
-      internalID: 772303173985734358
       vertices: []
       indices: 
       edges: []
@@ -211,9 +136,6 @@ TextureImporter:
       entries: []
     nameFileIdTable:
       status_down_0: -6530073121163382983
-      status_down_1: -5069794741759765544
-      status_down_2: -4006326507377701798
-      status_down_3: 772303173985734358
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
