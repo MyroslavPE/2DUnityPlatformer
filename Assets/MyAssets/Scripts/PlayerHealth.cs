@@ -1,5 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
+using System.Reflection;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -8,6 +10,12 @@ public class PlayerHealth : MonoBehaviour
     private Animator animator;
     [SerializeField] private Image healthFill;
     private bool isDead = false;
+    [SerializeField] private TextMeshProUGUI healthText;
+    [SerializeField] private Image statusImage;
+    [SerializeField] private Sprite[] statusSprites;
+    [SerializeField] private float drainSpeed = 0.5f;
+    private float targetFill;
+    private float displayedFill;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -15,6 +23,7 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = maxHealth;
         UpdateHealthBar();
         animator = GetComponentInChildren<Animator>();
+        displayedFill = 1f;
     }
     public void TakeDamage(int damage)
     {
@@ -36,14 +45,24 @@ public class PlayerHealth : MonoBehaviour
 
     void UpdateHealthBar()          
     {
-        healthFill.fillAmount = (float)currentHealth / maxHealth;
+        targetFill = (float)currentHealth / maxHealth;
+        healthText.text = currentHealth + "/" + maxHealth;
+        
+        if (targetFill <= 0f) statusImage.sprite = statusSprites[4];
+        else if (targetFill <= 0.25f) statusImage.sprite = statusSprites[3];
+        else if (targetFill <= 0.5f) statusImage.sprite = statusSprites[2];
+        else if (targetFill <= 0.75f) statusImage.sprite = statusSprites[1];
+        else statusImage.sprite = statusSprites[0];
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K))
+        if (displayedFill > targetFill)
         {
-            TakeDamage(10);
+            displayedFill = displayedFill - drainSpeed * Time.deltaTime;
         }
+
+        healthFill.fillAmount = displayedFill; 
+
     }
 }
