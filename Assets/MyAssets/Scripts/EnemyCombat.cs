@@ -8,6 +8,7 @@ public class EnemyCombat : MonoBehaviour
     public float attackRange = 0.5f;
     public float attackCooldown = 2f;
     private float lastAttackTime;
+    private bool isDead = false;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
