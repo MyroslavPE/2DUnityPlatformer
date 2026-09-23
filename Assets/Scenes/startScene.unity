@@ -26579,6 +26579,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 72b7d4bd4e68b53448d9164b0361e5c5, type: 3}
   - {fileID: 21300000, guid: 76eb15b937c4d5441a1e32a83509abec, type: 3}
   - {fileID: 21300000, guid: bf2cf54338f378c4e8a8085a6de13d3f, type: 3}
+  drainSpeed: 0.5
 --- !u!1 &1161068387
 GameObject:
   m_ObjectHideFlags: 0
@@ -30108,7 +30109,7 @@ PrefabInstance:
       objectReference: {fileID: 1701911121}
     - target: {fileID: 6991799177346498074, guid: 686b23f5e04a7e04da6e9d1874336952, type: 3}
       propertyPath: radius
-      value: 2.5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6991799177346498074, guid: 686b23f5e04a7e04da6e9d1874336952, type: 3}
       propertyPath: unitRoot

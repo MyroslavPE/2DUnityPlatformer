@@ -54,7 +54,7 @@ public class PlayerMovement : MonoBehaviour
         } 
         else if (horizontalInput < 0)
         {
-            unitRoot.localScale = new Vector3(1, 1, -1);
+            unitRoot.localScale = new Vector3(1, 1, 1);
         }
 
         //Animation

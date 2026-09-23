@@ -30,6 +30,7 @@ public class EnemyMovement : MonoBehaviour
 
         if (Vector2.Distance(transform.position, player.position) < radius)
         {
+            Debug.Log("CHASE " + Vector2.Distance(transform.position, player.position));
             if (player.position.x > transform.position.x)
             {
                 rb.linearVelocity = new Vector2(1, rb.linearVelocity.y);
@@ -44,13 +45,18 @@ public class EnemyMovement : MonoBehaviour
 
         else
         {
+            Debug.Log("PATROL " + Vector2.Distance(transform.position, player.position));
 
             if (Vector2.Distance(transform.position, pointA.position) < 1f)
             {
+                rb.linearVelocity = new Vector2(1, rb.linearVelocity.y);
+                unitRoot.localScale = new Vector3(-1, 1, 1);
                 moveToPointB = true;
             }
             else if (Vector2.Distance(transform.position, pointB.position) < 1f)
             {
+                rb.linearVelocity = new Vector2(-1, rb.linearVelocity.y);
+                unitRoot.localScale = new Vector3(1, 1, 1);
                 moveToPointB = false;
             }
         }
