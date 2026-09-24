@@ -4217,7 +4217,8 @@ MonoBehaviour:
   damage: 20
   attackPoint: {fileID: 723438055}
   attackRange: 0.3
-  attackCooldown: 2
+  attackCooldown: 1
+  hitDelay: 0.3
 --- !u!114 &755541867
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26573,6 +26574,8 @@ MonoBehaviour:
   attackPoint: {fileID: 1773949289}
   attackRange: 0.3
   attackCooldown: 0.5
+  hitDelay: 0.3
+  hitWindow: 0.15
 --- !u!114 &1155982267
 MonoBehaviour:
   m_ObjectHideFlags: 0
