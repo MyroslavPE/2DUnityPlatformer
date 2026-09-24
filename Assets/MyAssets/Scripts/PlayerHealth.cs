@@ -16,6 +16,7 @@ public class PlayerHealth : MonoBehaviour
     [SerializeField] private float drainSpeed = 0.5f;
     private float targetFill;
     private float displayedFill;
+    private KnockBack knockBack;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,15 +24,17 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = maxHealth;
         UpdateHealthBar();
         animator = GetComponentInChildren<Animator>();
+        knockBack = GetComponent<KnockBack>();
         displayedFill = 1f;
     }
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, Vector3 attackerPosition)
     {
         if (isDead) return;
 
         currentHealth -= damage;
         currentHealth = Mathf.Clamp(currentHealth, 0, maxHealth);
         animator.SetTrigger("3_Damaged");
+        knockBack.ApplyKnockBack(attackerPosition);
         UpdateHealthBar();
 
         if (currentHealth <= 0)

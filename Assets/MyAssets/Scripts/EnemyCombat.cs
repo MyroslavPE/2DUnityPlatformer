@@ -3,34 +3,68 @@ using UnityEngine;
 public class EnemyCombat : MonoBehaviour
 {
     public int damage = 25;
-    private Animator animator; 
+    private Animator animator;
     public Transform attackPoint;
     public float attackRange = 0.5f;
     public float attackCooldown = 2f;
-    private float lastAttackTime;
-    private bool isDead = false;
+    public float hitDelay = 0.3f;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    private float lastAttackTime;
+    private bool attackPending = false;
+    private float damageTime;
+
     void Awake()
     {
         animator = GetComponentInChildren<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Time.time - lastAttackTime >= attackCooldown)
+        // игрок в круге и кулдаун прошёл: начинаем замах
+        if (!attackPending && Time.time - lastAttackTime >= attackCooldown && PlayerInRange())
         {
-            Collider2D[] hitPlayers = Physics2D.OverlapCircleAll(attackPoint.position, attackRange);
-            foreach (Collider2D player in hitPlayers)
+            animator.SetTrigger("2_Attack");
+            lastAttackTime = Time.time;
+
+            attackPending = true;
+            damageTime = Time.time + hitDelay;
+        }
+
+        // время пришло: наносим урон, если игрок всё ещё в круге
+        if (attackPending && Time.time >= damageTime)
+        {
+            DealDamage();
+            attackPending = false;
+        }
+    }
+
+    bool PlayerInRange()
+    {
+        Collider2D[] hits = Physics2D.OverlapCircleAll(attackPoint.position, attackRange);
+        foreach (Collider2D hit in hits)
+        {
+            if (hit.transform.root.CompareTag("Player")) return true;
+        }
+        return false;
+    }
+
+    void DealDamage()
+    {
+        Collider2D[] hits = Physics2D.OverlapCircleAll(attackPoint.position, attackRange);
+        foreach (Collider2D hit in hits)
+        {
+            if (hit.transform.root.CompareTag("Player"))
             {
-                if (player.transform.root.CompareTag("Player"))
-                {
-                    animator.SetTrigger("2_Attack");
-                    player.transform.root.GetComponent<PlayerHealth>().TakeDamage(damage);
-                    lastAttackTime = Time.time;
-                }
+                hit.transform.root.GetComponent<PlayerHealth>().TakeDamage(damage, transform.position);
+                break;
             }
         }
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        if (attackPoint == null) return;
+        Gizmos.color = Color.red;
+        Gizmos.DrawWireSphere(attackPoint.position, attackRange);
     }
 }

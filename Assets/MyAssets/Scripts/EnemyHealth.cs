@@ -7,15 +7,17 @@ public class EnemyHealth : MonoBehaviour
     private int currentHealth;
     private Animator animator;
     private bool isDead = false;
+    private KnockBack knockBack;
 
     void Start()
     {
         currentHealth = maxHealth;
         animator = GetComponentInChildren<Animator>();
+        knockBack = GetComponent<KnockBack>();
     }
 
 
-    public void TakeDamage(int damage)
+    public void TakeDamage(int damage, Vector3 attackerPosition)
     {
         //проверка мертв ли враг, если да но выйти из метода
         if (isDead) return;
@@ -27,6 +29,7 @@ public class EnemyHealth : MonoBehaviour
 
         // проигрывается анимация получения урона
         animator.SetTrigger("3_Damaged");
+        knockBack.ApplyKnockBack(attackerPosition);
         //если текущее здоровье меньше или ровно нулю, то надо проиграть анимацию смерти и уничтожить объект
         if (currentHealth <= 0)
         {

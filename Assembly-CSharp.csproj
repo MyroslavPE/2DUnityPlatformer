@@ -57,6 +57,7 @@
     <Compile Include="Assets\MyAssets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\MyAssets\Sprites\SPUM\Sample\Script\PlayerManager.cs" />
     <Compile Include="Assets\MyAssets\Sprites\SPUM\Core\Script\Data\SPUM_AnimationData.cs" />
+    <Compile Include="Assets\MyAssets\Scripts\KnockBack.cs" />
     <Compile Include="Assets\MyAssets\Sprites\SPUM\Core\Script\Data\SpumTextureData.cs" />
     <Compile Include="Assets\MyAssets\Sprites\SPUM\Sample\Script\PlayerObj.cs" />
     <Compile Include="Assets\MyAssets\Scripts\EnemyMovement.cs" />

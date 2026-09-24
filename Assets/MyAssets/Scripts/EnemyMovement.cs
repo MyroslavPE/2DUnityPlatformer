@@ -8,6 +8,7 @@ public class EnemyMovement : MonoBehaviour
     public bool moveToPointB = true;
     public Transform player;
     public float radius = 0.5f;
+    private KnockBack knockBack;
 
 
     private Animator animator;
@@ -20,17 +21,19 @@ public class EnemyMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponentInChildren<Animator>();
-
+        knockBack = GetComponent<KnockBack>();
     }
 
     // FixedUpdate is called at a fixed interval and is independent of frame rate
     void FixedUpdate()
     {
+
         if (player == null) return;
+
+        if (knockBack.isKnockedBack) return;
 
         if (Vector2.Distance(transform.position, player.position) < radius)
         {
-            Debug.Log("CHASE " + Vector2.Distance(transform.position, player.position));
             if (player.position.x > transform.position.x)
             {
                 rb.linearVelocity = new Vector2(1, rb.linearVelocity.y);
@@ -42,10 +45,10 @@ public class EnemyMovement : MonoBehaviour
                 unitRoot.localScale = new Vector3(1, 1, 1);
             }
         }
+        
 
         else
         {
-            Debug.Log("PATROL " + Vector2.Distance(transform.position, player.position));
 
             if (Vector2.Distance(transform.position, pointA.position) < 1f)
             {

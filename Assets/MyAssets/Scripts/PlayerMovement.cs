@@ -17,11 +17,13 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody2D rb;
     public bool isGrounded;
+    private KnockBack knockBack;
 
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = unitRoot.GetComponent<Animator>();
+        knockBack = GetComponent<KnockBack>();
     }
 
     
@@ -42,8 +44,9 @@ public class PlayerMovement : MonoBehaviour
         
     }   
 
-        void FixedUpdate()
+    void FixedUpdate()
     {   //Movement left and right
+        if (knockBack.isKnockedBack) return;
         float horizontalInput = Input.GetAxisRaw("Horizontal");
         rb.linearVelocity = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
 
@@ -59,7 +62,6 @@ public class PlayerMovement : MonoBehaviour
 
         //Animation
         animator.SetBool("1_Move", Mathf.Abs(rb.linearVelocity.x) > 0.5f);
-        Debug.Log(horizontalInput);
         
 
     }

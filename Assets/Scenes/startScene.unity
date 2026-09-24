@@ -4214,10 +4214,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2fcd0b29507288149a7351504c8d8f96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyCombat
-  damage: 25
+  damage: 20
   attackPoint: {fileID: 723438055}
-  attackRange: 0.5
+  attackRange: 0.3
   attackCooldown: 2
+--- !u!114 &755541867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 755541849}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68630f5a222558f4aba9dd5797193370, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KnockBack
+  knockBackForce: 5
+  knockBackUpForce: 5
+  knockBackDuration: 0.5
+  isKnockedBack: 0
 --- !u!1 &767710114
 GameObject:
   m_ObjectHideFlags: 0
@@ -26555,8 +26571,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerCombat
   damage: 20
   attackPoint: {fileID: 1773949289}
-  attackRange: 0.5
-  attackCooldown: 1
+  attackRange: 0.3
+  attackCooldown: 0.5
 --- !u!114 &1155982267
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26580,6 +26596,22 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 76eb15b937c4d5441a1e32a83509abec, type: 3}
   - {fileID: 21300000, guid: bf2cf54338f378c4e8a8085a6de13d3f, type: 3}
   drainSpeed: 0.5
+--- !u!114 &1155982268
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1155982261}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68630f5a222558f4aba9dd5797193370, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::KnockBack
+  knockBackForce: 5
+  knockBackUpForce: 5
+  knockBackDuration: 0.5
+  isKnockedBack: 0
 --- !u!1 &1161068387
 GameObject:
   m_ObjectHideFlags: 0
@@ -28750,7 +28782,7 @@ Transform:
   m_GameObject: {fileID: 1773949288}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.3, y: 0.39, z: 0}
+  m_LocalPosition: {x: -0.54, y: 0.45, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30212,6 +30244,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7159059468813223032, guid: 686b23f5e04a7e04da6e9d1874336952, type: 3}
       insertIndex: -1
       addedObject: {fileID: 755541861}
+    - targetCorrespondingSourceObject: {fileID: 7159059468813223032, guid: 686b23f5e04a7e04da6e9d1874336952, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 755541867}
   m_SourcePrefab: {fileID: 100100000, guid: 686b23f5e04a7e04da6e9d1874336952, type: 3}
 --- !u!1001 &5624286525569051565
 PrefabInstance:
@@ -30363,6 +30398,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2040128902940897287, guid: 05ac2d3f3ae86bc448b529bb7eeb8d5c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1155982267}
+    - targetCorrespondingSourceObject: {fileID: 2040128902940897287, guid: 05ac2d3f3ae86bc448b529bb7eeb8d5c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1155982268}
   m_SourcePrefab: {fileID: 100100000, guid: 05ac2d3f3ae86bc448b529bb7eeb8d5c, type: 3}
 --- !u!4 &8107193971371443360 stripped
 Transform:
